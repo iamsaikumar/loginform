@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            /* background-image: url("grad.jpg"); */
+            background: linear-gradient(to right, rgb(0, 247, 255), rgb(225, 0, 255));
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .content {
+            background-color: white;
+            border: 1px solid black;
+            height: auto;
+            width: 33vh;
+            border-radius: 9px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 30px;
+            position: relative;
+            margin: 0px auto;
+            margin-top: 9% !important;
+        }
+
+        .login {
+            text-align: center;
+
+        }
+
+        input {
+            border: none;
+            outline: none;
+            font-size: 14px;
+            padding-left: 6px;
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        .fgp {
+            position: relative;
+            left: 67%;
+            width: 40%;
+            bottom: 4%;
+            top: -23px;
+            font-size: 14px;
+        }
+
+        .pass {
+            margin: 26px 0px;
+        }
+
+        .btn {
+            height: 5vh;
+            width: 100%;
+            border-radius: 32px;
+        }
+
+        .bt {
+            margin-top: -6%;
+
+
+        }
+
+        .or {
+            text-align: center;
+            margin-top: 15%;
+
+        }
+
+        .icons {
+            align-items: center;
+            text-align: center;
+        }
+
+        .orl {
+            margin-top: 37%;
+            text-align: center;
+            color: rgb(153, 131, 131);
+        }
+
+        .sign {
+            text-align: center;
+
+
+        }
+
+        button {
+            background-image: linear-gradient(to right, rgb(0, 247, 255), rgb(225, 0, 255));
+            color: white;
+        }
+
+        .pu,
+        .pp {
+            padding-top: 5px;
+        }
+
+        .orl,
+        .sign {
+            font-size: 13px;
+        }
+
+        #firsticons {
+            height: 22px;
+            position: relative;
+            top: 5px;
+        }
+
+        #SocialIcons {
+            height: 40px;
+        }
+
+        /* Responsive Web Design */
+        @media screen and (max-width:768px) {
+            .content {
+                margin-top: 12% !important;
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            .content {
+                margin-top: 19% !important;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            .content {
+                margin-top: 30% !important;
+                height: 64vh;
+                width: 25vh;
+            }
+
+            input {
+                border: none;
+                outline: none;
+                font-size: 13px;
+                padding-left: 2px;
+            }
+
+            .fgp {
+                position: relative;
+                left: 53%;
+                width: 49%;
+                bottom: 4%;
+                top: -23px;
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width:360px) {
+                .content {
+                    margin-top: 8% !important;
+                    height: 79vh;
+                    width: 33vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="login">
+            <h2>Login</h2>
+        </div>
+        <div class="uname">
+            <label>Username</label><br>
+
+            <div class="pu">
+                <img id="firsticons" src="person.png" alt="user logo loading">
+                <input type="text" name="uname" placeholder="Type your username">
+            </div>
+            <hr>
+        </div>
+        <div class="pass">
+            <label>Password</label><br>
+            <div class="pp">
+                <img id="firsticons" src="lock.png" alt="lock logo loading">
+                <input type="password" name="passwrd" placeholder="Type your password">
+            </div>
+            <hr>
+        </div>
+
+        <div class="fgp">
+            <p>Forgot Password</p>
+        </div>
+        <div class="bt">
+            <button type="button" class="btn btn-danger"><b>LOGIN</b></button>
+        </div>
+
+        <div class="or">
+            <p>Or Sign Up Using</p>
+        </div>
+        <div class="icons">
+            <img id="SocialIcons" src="fb.png" alt="fb logo loading">
+            <img id="SocialIcons" src="twit.png" alt="twitter logo loading">
+            <img id="SocialIcons" src="gm.png" alt="g-mail logo loading">
+        </div>
+        <div class="orl">
+            <p>Or Sign Up Using</p>
+        </div>
+        <div class="sign">
+            <p>SIGNUP</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
